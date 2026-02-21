@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicdata</title>
+</head>
+
+<body>
+  <div class="login">
+    <h1>FWI Predictiom</h1>
+    <!-- main inpit for receiving input from our ml -->
+    <form action="{{url_for('predict_datapoints')}}" method="post">
+    <input type="text" name="Temperature" placeholder="Temperature" required="required"><br>
+    <input type="text" name="RH" placeholder="RH" required="required"><br>
+    <input type="text" name="WS" placeholder="WS" required="required"><br>
+    <input type="text" name="Rain" placeholder="Rain" required="required"><br>
+    <input type="text" name="FFMC" placeholder="FFMC" required="required"><br>
+    <input type="text" name="DMC" placeholder="DMC" required="required"><br>
+    <input type="text" name="ISI" placeholder="ISI" required="required"><br>
+    <input type="text" name="Classes" placeholder="Classes" required="required"><br>
+    <input type="text" name="Region" placeholder="Region" required="required"><br>
+
+    <button type="Sumbit" class="btn btn-pirmary btn-block btn-large">Predict</button>
+  </form>
+  <h2>The FWI Prediction is {{ans}}</h2>
+
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
