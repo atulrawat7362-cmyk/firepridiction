@@ -185,12 +185,12 @@
           box.style.display = "block";
 
           // 🔥 Risk Levels (you can adjust thresholds)
-          if(value < .3){
+          if(value < 5){
               box.style.background = "#4CAF50"; // Green
               box.style.color = "white";
               box.innerHTML += " → Low Fire Risk";
           }
-          else if(value < .6){
+          else if(value < 10){
               box.style.background = "#FF9800"; // Orange
               box.style.color = "white";
               box.innerHTML += " → Moderate Fire Risk";
